@@ -1,0 +1,35 @@
+@import 'vendor/normalize.min.css'
+
+@import 'libs/fonts'
+
+@import 'base/variables'
+//@import 'base/mixins'
+
+*
+  font-family: 'NeueHaasGroteskText Pro', sans-serif
+
+html
+  scroll-behavior: smooth
+
+body
+  color: #000
+  background-color: #fff
+  font-size: 12px
+  margin: 0
+
+.container
+  position: relative
+  width: calc(1024px - 100px)
+  margin: 0 auto
+
+@import 'blocks/text'
+
+@import 'blocks/header'
+@import 'blocks/dropdown'
+@import 'blocks/contacts'
+@import 'blocks/nav'
+@import 'blocks/button'
+@import 'blocks/main'
+@import 'blocks/section'
+
+@import 'media' //needed to make page responsible, little edits

@@ -1,0 +1,108 @@
+@media (max-width: 1024px)
+    .container
+        width: calc(100% - 100px)
+    .section__poster + .section__poster
+        margin-left: 6vw
+@media (max-width: 915px)
+    .container
+        width: calc(100% - 8vw)
+    .main
+        padding-bottom: 100px
+    .nav
+        &__wrapper
+            min-height: 75px
+        &__triangle
+            display: none
+    .section
+        &__poster + .section__poster
+            margin-left: 30px
+        &__title
+            margin-bottom: 45px
+@media (max-width: 800px)
+    .section
+        &__wrapper
+            justify-content: space-between
+    .main
+        padding: 50px 0 70px
+@media (max-width: 720px)
+    .section
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        + .section
+            margin-top: 65px
+        &__poster + .section__poster
+            margin-left: 12vw
+    .main
+        padding-bottom: 70px
+@media (max-width: 600px)
+    .text-l
+        font-size: 25px
+        line-height: 25px
+    .text-m
+        font-size: 18px
+        line-height: 18px
+    .header
+        &__top-part
+            padding: 10px 0
+        &__top-wrapper
+            flex-direction: column-reverse
+            align-items: center
+            padding-top: 45px
+        &__name
+            top: 0px
+            transform: translateX(-50%) translateY(0)
+    .dropdown
+        margin-top: 20px
+        padding-left: 40px
+        &__item
+            width: 70px
+            height: 30px
+        &__location
+            width: 25px
+    .contacts
+        align-items: center
+        &__title
+            display: none
+    .button__header
+        width: 100px
+        height: 40px
+        padding-top: 10px
+@media (max-width: 480px)
+    .main
+        padding: 40px 0 50px
+    .nav
+        margin-top: 10px
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+            padding: 10px 0
+    .button__header
+        width: 120px
+        margin: 6px 20px
+    .section__title
+        margin-bottom: 35px
+@media (max-width: 400px)
+    .section
+        &__poster
+            &::before
+                border: none
+                height: calc(100% + 10px)
+                width: calc(100% + 10px)
+            & + .section__poster
+                margin-left: 8vw
+        
+@media (max-width: 375px)
+    .button__header
+        width: 120px
+        margin: 6px 8px
+    .section
+        + .section
+            margin-top: 40px
+        &__poster
+            width: 35vw
+            height: 55vw
+@media (max-width: 315px)
+    .button__header
+        width: 100px
+        margin: 5px 5px

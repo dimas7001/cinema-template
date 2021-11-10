@@ -1,0 +1,55 @@
+.section
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    &__wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: flex-start
+    &__title
+        margin-bottom: 65px
+    &__posters
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+    &__poster
+        position: relative
+        width: 135px
+        height: 210px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        box-sizing: border-box
+        border-radius: 9px
+        transform-style: preserve-3d
+        cursor: pointer
+        &::before
+            position: absolute
+            display: block
+            content: ""
+            height: calc( 100% + 20px )
+            width: calc( 100% + 20px )
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%) translateZ(-1px)
+            border-radius: 13px
+            border: 2px solid #fff
+        + .section__poster
+            margin-left: 65px
+    &.section_premiere
+        .section__poster::before
+            background-color: $main
+    &.section_soon
+        .section__poster::before
+            background-color: $main-highlight
+    #poster1
+        background-image: url('../img/posters/poster1.png')
+    #poster2
+        background-image: url('../img/posters/poster2.png')
+    #poster3
+        background-image: url('../img/posters/poster3.png')
+    #poster4
+        background-image: url('../img/posters/poster4.png')

@@ -1,11 +1,11 @@
 .dropdown
     position: relative
     border: 2px solid #000
-    padding-left: 50px
+    padding-left: 40px
     cursor: pointer
-    &__item
+    &__selected
         display: inline-block
-        width: 100px
+        width: 110px
         height: 40px
         text-align: right
         vertical-align: middle        
@@ -18,4 +18,42 @@
         transform: translateY(-50%)
         height: auto
         width: 30px
-        
+    &__list
+        position: absolute
+        top: -10px
+        left: -2px
+        width: calc( 100% + 4px )
+        list-style: none
+        text-align: right
+        margin: 0
+        padding: 0
+        background-color: rgba(255, 255, 255, .95)
+        z-index: 20
+        opacity: 0
+        transform: scaleY(0)
+        transition: all .2s ease
+        li
+            padding: 6px
+            border: 1px solid rgb(150, 150, 150)
+            transition: all .2s ease
+            &:hover
+                background-color: rgb(230, 230, 230)
+                transition: all .2s ease
+        &_active
+            top: calc( 100% + 2px )
+            opacity: 1
+            transform: scaleY(1)
+            transition: all .2s ease
+.nav .dropdown
+    display: none
+    width: 130px
+    text-align: center
+    padding: 0
+    &__selected
+        text-align: center
+        padding: 6px 
+    &__location
+        display: none
+    &__list
+        color: #353535
+        text-align: center

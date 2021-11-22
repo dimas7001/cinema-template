@@ -13,8 +13,13 @@
             <div class="container">
                 <div class="header__top-wrapper">
                     <div class="dropdown text-m">
-                        <div class="dropdown__item">м. Київ</div>
+                        <div class="dropdown__selected">м. Київ</div>
                         <img class="dropdown__location" src="img/icons/location.png"></img>
+                        <ul class="dropdown__list">
+                            <li>м. Дніпро</li>
+                            <li>м. Львів</li>
+                            <li>м. Київ</li>
+                        </ul>
                     </div>
                     <div class="header__name text-xl">КОНТЕНТ</div>
                     <div class="contacts">
@@ -27,6 +32,15 @@
         </div>
         <nav class="nav">
             <div class="container">
+                <div class="dropdown text-m">
+                    <div class="dropdown__selected">м. Київ</div>
+                    <img class="dropdown__location" src="img/icons/location.png"></img>
+                    <ul class="dropdown__list ">
+                        <li>м. Дніпро</li>
+                        <li>м. Львів</li>
+                        <li>м. Київ</li>
+                    </ul>
+                </div>
                 <div class="nav__wrapper text-m">
                     <div class="button button__header button_selected">Головна</div>
                     <div class="button button__header">Білети</div>
@@ -34,8 +48,13 @@
                     <div class="button button__header">Пошук</div>
                     <div class="button button__header">Інфо</div>
                 </div>
+                <div class="contacts">
+                    <div class="contacts__phone text-xs">Телефон: <a href="tel:380971456274">+380971456274</a></div>
+                    <div class="contacts__email text-xs">E-mail: <a href="mailto:kontent.kino@gmail.com">kontent.kino@gmail.com</a></div>
+                </div>
             </div>
         </nav>
+        <div class="toggle"></div>
     </header>
     <main class="main">
         <div class="container">
@@ -61,5 +80,8 @@
             <div class="lang-label__lang">ENG</div>
         </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html> 

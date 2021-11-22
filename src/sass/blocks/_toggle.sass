@@ -1,0 +1,33 @@
+.toggle
+    display: none
+    position: absolute
+    top: 20px
+    right: 15px
+    height: 3px
+    width: 24px
+    background-color: $main
+    z-index: 100
+    transition: all .1s ease
+    &::before,
+    &::after
+        position: absolute
+        content: ""
+        display: block
+        height: 3px
+        width: 24px
+        background-color: $main
+        transition: all .4s ease
+    &::before
+        top: -7px
+    &::after
+        bottom: -7px
+    &_active
+        background-color: transparent
+        transition: all .1s ease
+        position: fixed
+        &::before
+            transform: rotate(45deg) translate(5px, 5px)
+            transition: all .4s ease
+        &::after
+            transform: rotate(-45deg) translate(5px, -5px)
+            transition: all .4s ease

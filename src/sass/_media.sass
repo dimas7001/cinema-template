@@ -24,6 +24,47 @@
             justify-content: space-between
     .main
         padding: 50px 0 70px
+@media (max-width: 768px)
+    .contacts,
+    .dropdown
+        display: none
+    .header
+        &__top-wrapper
+            justify-content: center
+        &__name
+            position: static
+            transform: none
+    .toggle
+        display: block
+    .nav
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        right: -100vw
+        background-color: rgba(0, 0, 0, .9)
+        z-index: 10
+        overflow: hidden
+        transition: all .4s ease
+        opacity: 0
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        .container
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            padding: 15px 0 10px
+            box-sizing: border-box
+        .dropdown
+            display: block
+            margin-top: 0
+            border-color: #fff 
+            color: #fff
+        .contacts
+            display: flex
 @media (max-width: 720px)
     .section
         &__wrapper
@@ -36,34 +77,24 @@
     .main
         padding-bottom: 70px
 @media (max-width: 600px)
-    .text-l
-        font-size: 25px
-        line-height: 25px
-    .text-m
-        font-size: 18px
-        line-height: 18px
-    .header
-        &__top-part
-            padding: 10px 0
-        &__top-wrapper
-            flex-direction: column-reverse
-            align-items: center
-            padding-top: 45px
-        &__name
-            top: 0px
-            transform: translateX(-50%) translateY(0)
+    .text
+        &-xl
+            font-size: 36px
+            line-height: 36px
+        &-l
+            font-size: 25px
+            line-height: 25px
+        &-m
+            font-size: 18px
+            line-height: 18px
     .dropdown
         margin-top: 20px
         padding-left: 40px
-        &__item
+        &__selected
             width: 70px
             height: 30px
         &__location
             width: 25px
-    .contacts
-        align-items: center
-        &__title
-            display: none
     .button__header
         width: 100px
         height: 40px
@@ -71,12 +102,6 @@
 @media (max-width: 480px)
     .main
         padding: 40px 0 50px
-    .nav
-        margin-top: 10px
-        &__wrapper
-            flex-wrap: wrap
-            justify-content: center
-            padding: 10px 0
     .button__header
         width: 120px
         margin: 6px 20px

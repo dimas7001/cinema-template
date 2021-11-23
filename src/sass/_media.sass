@@ -3,6 +3,12 @@
         width: calc(100% - 100px)
     .section__poster + .section__poster
         margin-left: 6vw
+@media (max-width: 960px)
+    .section
+        &__films
+            & > a
+                width: 20vw
+                height: 30vw
 @media (max-width: 915px)
     .container
         width: calc(100% - 8vw)
@@ -65,6 +71,11 @@
             color: #fff
         .contacts
             display: flex
+    .section
+        &__films
+            & > a
+                width: 150px
+                height: 225px
 @media (max-width: 720px)
     .section
         &__wrapper
@@ -131,6 +142,8 @@
         margin: 6px 20px
     .section__title
         margin-bottom: 35px
+    .input__search
+        width: 85vw
 @media (max-width: 400px)
     .section
         &__poster
@@ -140,7 +153,6 @@
                 width: calc(100% + 10px)
             & + .section__poster
                 margin-left: 8vw
-        
 @media (max-width: 375px)
     .button__header
         width: 120px
@@ -156,6 +168,10 @@
             height: 85vw
         &_pay
             margin-top: 15px !important
+        &__films
+            & > a
+                width: 40vw
+                height: 60vw
 @media (max-width: 315px)
     .button__header
         width: 100px

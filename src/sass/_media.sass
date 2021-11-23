@@ -74,8 +74,18 @@
             margin-top: 65px
         &__poster + .section__poster
             margin-left: 12vw
+        &_pay
+            margin: 30px 0 0 !important
+            align-items: center
+        &__pay-line:first-child
+            margin-bottom: 20px
+        &__pay-info
+            margin-bottom: 30px
     .main
         padding-bottom: 70px
+    .button
+        &__pay
+            margin-left: 0
 @media (max-width: 600px)
     .text
         &-xl
@@ -95,10 +105,24 @@
             height: 30px
         &__location
             width: 25px
+    .nav .dropdown
+        &__selected
+            width: 100%
     .button__header
         width: 100px
         height: 40px
         padding-top: 10px
+    .section
+        &_tickets
+            width: 100% !important
+        &__hall
+            width: 300px
+            height: 300px
+        &__pay-line
+            span
+                width: 55px
+    .input__name
+        width: 40vw
 @media (max-width: 480px)
     .main
         padding: 40px 0 50px
@@ -127,6 +151,11 @@
         &__poster
             width: 35vw
             height: 55vw
+        &__hall
+            width: 90%
+            height: 85vw
+        &_pay
+            margin-top: 15px !important
 @media (max-width: 315px)
     .button__header
         width: 100px

@@ -1,0 +1,19 @@
+.place
+    width: 14px
+    height: 14px
+    border: 2px solid #fff
+    background-color: $main
+    cursor: pointer
+    transition: all .3s easy
+    &_taken
+        background-color: rgb(150, 150, 150)
+        cursor: default
+    &_active
+        background-color: $main-highlight
+        transition: all .3s easy
+    &_disabled
+        cursor: default
+
+.section__subtitle
+    .place
+        display: inline-block

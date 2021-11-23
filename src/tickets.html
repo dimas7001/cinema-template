@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Замовлення Білетів</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-part">
+            <div class="container">
+                <div class="header__top-wrapper">
+                    <div class="dropdown text-m">
+                        <div class="dropdown__selected">м. Київ</div>
+                        <img class="dropdown__location" src="img/icons/location.png"></img>
+                        <ul class="dropdown__list">
+                            <li>м. Дніпро</li>
+                            <li>м. Львів</li>
+                            <li>м. Київ</li>
+                        </ul>
+                    </div>
+                    <div class="header__name text-xl">КОНТЕНТ</div>
+                    <div class="contacts">
+                        <div class="contacts__title text-s">Наші контакти:</div>
+                        <div class="contacts__phone text-xs">Телефон: <a href="tel:380971456274">+380971456274</a></div>
+                        <div class="contacts__email text-xs">E-mail: <a href="mailto:kontent.kino@gmail.com">kontent.kino@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="dropdown text-m">
+                    <div class="dropdown__selected">м. Київ</div>
+                    <img class="dropdown__location" src="img/icons/location.png"></img>
+                    <ul class="dropdown__list ">
+                        <li>м. Дніпро</li>
+                        <li>м. Львів</li>
+                        <li>м. Київ</li>
+                    </ul>
+                </div>
+                <div class="nav__wrapper text-m">
+                    <a href="main.html" class="button button__header">Головна</a>
+                    <a href="tickets.html" class="button button__header button_selected">Білети</a>
+                    <img class="nav__triangle" src="img/header/triangle.png"></img>
+                    <a href="#" class="button button__header">Пошук</a>
+                    <a href="#" class="button button__header">Інфо</a>
+                </div>
+                <div class="contacts">
+                    <div class="contacts__phone text-xs">Телефон: <a href="tel:380971456274">+380971456274</a></div>
+                    <div class="contacts__email text-xs">E-mail: <a href="mailto:kontent.kino@gmail.com">kontent.kino@gmail.com</a></div>
+                </div>
+            </div>
+        </nav>
+        <div class="toggle"></div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section__wrapper">
+                <div class="section section_tickets">
+                    <div class="section__title text-l">Виберіть вільне місце:</div>
+                    <div class="section__subtitle text-m">(вільні місця позначенi <div class="place place_disabled"></div> )</div>
+                    <div class="section__hall">
+                        <div data-row="1">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="2">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="3">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="4">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="5">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="6">
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                        </div>
+                        <div data-row="7">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="8">
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                        </div>
+                        <div data-row="9">
+                            <div class="place"></div>
+                            <div class="place"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place place_taken"></div>
+                            <div class="place"></div>
+                            <div class="place"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section_pay">
+                    <div class="section__title text-l">Бронь білета</div>
+                    <div class="section__pay-info">
+                        <div class="section__pay-line text-m">
+                            <span>ФІО:</span>
+                            <input class="input input__name" type="text">
+                        </div>
+                        <div class="section__pay-line text-m">
+                            <span>Місце:</span>
+                            <div class="section__pay-place"></div>
+                        </div>
+                        <div class="section__pay-line text-m">
+                            <span>Ряд:</span>
+                            <div class="section__pay-row"></div>
+                        </div>
+                        <div class="section__pay-line text-m">
+                            <span>Ціна:</span>
+                            <div class="section__pay-price"></div>
+                        </div>
+                    </div>
+                    <button class="button button__pay text-m" type="submit">Сплатити</button>
+                </div>
+            </div>
+        </div>
+        <div class="lang-label text-xs">
+            <a href="tickets_eng.html">ENG</a>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

@@ -41,9 +41,13 @@
         + .section__poster
             margin-left: 65px
     &.section_premiere
+        margin-top: 15px
+        margin-bottom: 15px
         .section__poster::before
             background-color: $main
     &.section_soon
+        margin-top: 15px
+        margin-bottom: 15px
         .section__poster::before
             background-color: $main-highlight
     #poster1
@@ -123,6 +127,14 @@
     &.section_search
         width: 100%
         .section__title
-            margin-bottom: 35px
-    &_info + .section_info
-        margin-left: 30px
+            margin: 10px 0 35px
+    &_info
+        width: 80%
+        height: 100%
+        display: block
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        margin-top: 30px
+        & + .section_info
+            margin-left: 30px

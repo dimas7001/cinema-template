@@ -20,7 +20,17 @@ $('.nav .dropdown__list').click((e) =>
 )
 
 $('.place:not(.place_disabled):not(.place_taken)').click((e) => {
-    $(e.target).toggleClass('place_active');
+    var seat = $(e.target);
+    seat.toggleClass('place_active');
+    /*if (seat.hasClass('place_active')) {
+        let strCoord = e.target.dataset.coord;
+        let arrCoord = strCoord.split(' ');
+        $('.section__pay-place')[0].insertAdjacentHTML('beforeEnd', `<div data-seat="${strCoord}">${arrCoord[0]}</div>`);
+        $('.section__pay-row')[0].insertAdjacentHTML('beforeEnd', `<div data-seat="${strCoord}">${arrCoord[1]}</div>`);
+        $('.section__price')[0].textContent = ticketPrice;
+    }*/
+
+
 })
 
 let filmNames = [];

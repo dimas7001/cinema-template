@@ -149,29 +149,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="section section_pay">
+                <form class="section section_pay">
                     <div class="section__title text-l">Бронь білета</div>
                     <div class="section__pay-info">
                         <div class="section__pay-line text-m">
                             <span>ФІО:</span>
-                            <input class="input input__name" type="text">
+                            <input class="input input__name" type="text" required>
                         </div>
                         <div class="section__pay-line text-m">
-                            <span>Місце:</span>
-                            <div class="section__pay-place"></div>
-                        </div>
-                        <div class="section__pay-line text-m">
-                            <span>Ряд:</span>
-                            <div class="section__pay-row"></div>
-                            <!-- <div class="label" data-seat="1 1">1</div><div class="label" data-seat="1 2">, 2</div> -->
+                            <span>Кількість:</span>
+                            <div class="section__pay-amount">0</div>
                         </div>
                         <div class="section__pay-line text-m">
                             <span>Ціна:</span>
                             <div class="section__pay-price"><div class="section__price">0</div><div> грн</div></div>
                         </div>
                     </div>
-                    <button class="button button__pay text-m" type="submit">Сплатити</button>
-                </div>
+                    <input class="button button__pay text-m" type="submit" value="Сплатити"></input>
+                </form>
             </div>
             <div class="main__desc text-s">На сайті кінотеатру ви зможете буквально за хвилину купити <b>білет на кіно</b>. Дізнайтесь чи є місця на сеанс та придбайте <b>білет</b> майже миттєво!</div>
         </div>
